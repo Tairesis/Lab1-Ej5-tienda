@@ -149,8 +149,8 @@ public class Productos extends javax.swing.JFrame {
 
         if ((precioFinal != 0) && (!nombre.isEmpty()) && (!categoria.equals("Elegir"))) {
             Vector<Object> productoCargado = new Vector<>();
-            productoCargado.add(nombre);
             productoCargado.add(categoria);
+            productoCargado.add(nombre);            
             productoCargado.add(precioFinal);
 
             DefaultTableModel model = (DefaultTableModel) jTBProductos.getModel();
